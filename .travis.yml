@@ -6,3 +6,12 @@ addons:
 before_script:
 - psql -c 'create databse travis_ci_test;' -U postgres
 - cp config/databse/yml.travis config/databse.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: rH61BIuwiZX+V7U50lI+nITh5C/CI0CS27WX9WtJ43fM6iqV4nbRtIajuvVbmXZbdy0JE5r1QNtW5M7S17ciK1JUvSesXT+NxnUl7XQ4/8kf+zt1ddIwb8vW3XoRyui3WIyAOnvrz0mNIBBiYum9OkPuPZ+bj/obOPU8wXXq2SYCD3OPMgB1gGIp4lzy9I4JWgGOgKA38twdCIHWrFuM17oi1PYibc7eVDt1Kvv9LRCkeNtP238FNNNRtZgpd0vaOYMf2LfZREx8NfkVbMxufoT+Vq6w2EI8VLqTZlqI5o4nQNGgyU3plv68jPUC7JQY890HajERXK2ejqG/h7shGGuqYZEZdvLYP5FF7/1Fs98fcE/AAMag4hFbvg/rX5qzQHpqvVbFHloEucuVwATLWd/Hdwyya0TE22h4gC4w70y4rsVncHUU0qxA4kXL3I/ilZZ86myFj1IoVs7rbSFANhZ1l10yokLJisfuM6dvn7XSVH2OTPIwr0B3Bnmg6s3bIwm8P5UerKUhWAIOLDpLPpibdxfhWKBJOflEAsDZCJEZmNA1e4s8iBvp4CSU4+X5dUvaKgBPpgmRwm0r4s0pUnTkZQGJNwIPrI1J+h5jdIpZXNItzkKG3p6Ji8Sp4a1Bg51kkl8sBtKNoTHd+rnzqgxy439g2gG2sIZ6x8AejDs=
+  app: sarahdswift
+  on:
+    repo: sdossettswift/sarahdswift
+  run:
+      - "rake db:migrate"
