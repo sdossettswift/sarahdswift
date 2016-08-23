@@ -5,7 +5,7 @@ addons:
   postgresql: '9.4'
 before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
-- cp config/databse/yml.travis config/databse.yml
+- cp config/database.yml.travis config/database.yml
 deploy:
   provider: heroku
   api_key:
