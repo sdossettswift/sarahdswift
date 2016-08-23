@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+- 2.3.1
+addons:
+  postgresql: '9.4'
+before_script:
+- psql -c 'create databse travis_ci_test;' -U postgres
+- cp config/databse/yml.travis config/databse.yml
