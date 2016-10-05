@@ -1,0 +1,102 @@
+$mesa: #336E7B;
+$celeste: #D9FAD9;
+
+$sans: 'Raleway', sans-serif;
+$cursive:  'Montez', cursive;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.grid {
+    font-size: 0;
+    text-align: justify;
+}
+
+.grid > * {
+    display: inline-block;
+    font-size: medium;
+    text-align: left;
+}
+
+.grid:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.content-grid {
+    max-width: 1024px;
+}
+
+.content-grid > * {
+    vertical-align: top;
+}
+
+.content-grid .left-column {
+    width:50%;
+    position: relative;
+}
+
+.content-grid .right-column {
+    width:50%;
+    display: inline-block;
+}
+
+
+body{
+  background-color: $celeste;
+}
+
+
+h1{
+  font-family: $sans;
+  font-weight: normal;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+h2, h3{
+  font-family: $cursive;
+  font-weight: normal;
+  font-size: 3em;
+  color: navy;
+}
+
+p{
+  font-family: $sans;
+  color: navy;
+}
+
+
+nav > *{
+  font-family: $sans;
+
+}
+ul{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+li, li>*{
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  padding: 1%;
+  font-family: $sans;
+  color: $mesa;
+
+}
+img{
+  display: inline-block;
+}
+
+
+.bubble{
+  border-radius: 50%;
+  width: 87%;
+  padding-left: 10px;
+
+}
