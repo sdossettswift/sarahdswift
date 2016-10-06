@@ -91,6 +91,16 @@ h3 {
   font-size: 1.2rem;
   margin: 0;
 
+  a:link{
+    color: $darkceleste;
+  }
+  a:visited{
+    color: $darkceleste;
+  }
+  a:hover{
+    color: white;
+  }
+
 }
 p{
   font-family: $sans;
@@ -168,4 +178,11 @@ a:visited, a:link{
   i{
     color: $flamingo;
   }
+}
+.resume{
+  text-align: center;
+  width:100%;
+}
+.iframe{
+  width: 200px;
 }
