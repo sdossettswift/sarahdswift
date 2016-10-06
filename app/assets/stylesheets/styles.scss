@@ -16,6 +16,15 @@ $cursive: 'Parisienne', cursive;
     box-sizing: border-box;
 }
 
+.header{
+  min-height: 20vh;
+}
+.meat{
+  min-height: 70vh;
+}
+.footer{
+  min-height: 10vh;
+}
 .grid {
     font-size: 0;
     text-align: justify;
@@ -59,7 +68,7 @@ body{
 h1{
   font-family: $sans;
   font-weight: normal;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   text-align: center;
   margin: 0;
@@ -69,8 +78,9 @@ h1{
 h2 {
   font-family: $cursive;
   color: $flamingo;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 10px;
+  font-weight: normal;
   margin-bottom: 10px;
 }
 
@@ -78,7 +88,7 @@ h3 {
   font-family: $sans;
   color: $flamingo;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
 
 }
@@ -129,4 +139,18 @@ a:visited, a:link{
   width: 87%;
   padding-left: 10px;
 
+}
+.footer{
+  i{
+    padding: 10px;
+  }
+  a:link{
+    color: $darkceleste;
+  }
+  a:visited{
+    color: $darkceleste;
+  }
+  a:hover{
+    color: white;
+  }
 }
