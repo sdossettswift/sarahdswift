@@ -20,10 +20,23 @@
           <li><%= link_to 'ABOUT', href="/"%></li>
           <li><%= link_to 'SKILLS', href="/skills"%></li>
           <li><%= link_to 'EDUCATION', href="/schooling"%></li>
-          <li><%= link_to 'PORTFOLIO', href="/portfolio"%></li>
+          <!-- <li><%= link_to 'PORTFOLIO', href="/portfolio"%></li> -->
           <li><%= link_to 'CONTACT', href="/contact"%></li>
         </ul>
       </div>
     <%= yield %>
+    <div class="footer">
+      <div class="nav">
+        <ul>
+          <a href="https://github.com/sdossettswift"><i class="fa fa-github
+            fa-2x" aria-hidden="true"></i></a>
+
+            <a href="https://linkedin.com/in/sarahdswift"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+            <a href="mailto:sdossettswift@gmail.com?subject=GettingInTouch"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a>
+
+        </ul>
+
+    </div>
   </body>
 </html>
