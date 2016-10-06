@@ -1,8 +1,11 @@
-$mesa: #336E7B;
-$celeste: #D9FAD9;
+$mesa: #374040;
+$celeste: #A0D6B4;
+$darkceleste: #71B09F;
+$flamingo: #DB0A5B;
+
 
 $sans: 'Raleway', sans-serif;
-$cursive:  'Montez', cursive;
+$cursive: 'Parisienne', cursive;
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -15,7 +18,6 @@ $cursive:  'Montez', cursive;
 
 .grid > * {
     display: inline-block;
-    font-size: medium;
     text-align: left;
 }
 
@@ -56,21 +58,36 @@ h1{
   color: white;
   text-align: center;
   margin: 0;
+
 }
 
-h2, h3{
+h2 {
   font-family: $cursive;
-  font-weight: normal;
-  font-size: 3em;
-  color: navy;
+  color: $flamingo;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+h3 {
+  font-family: $sans;
+  color: $flamingo;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+
+}
 p{
   font-family: $sans;
-  color: navy;
+  color: $mesa;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
-
+.nav {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 nav > *{
   font-family: $sans;
 
@@ -87,13 +104,21 @@ li, li>*{
   padding: 1%;
   font-family: $sans;
   color: $mesa;
+  font-size: 1.5rem;
 
 }
 img{
   display: inline-block;
 }
 
+a:hover{
+  color: white;
+}
 
+a:visited, a:link{
+  text-decoration: none;
+
+}
 .bubble{
   border-radius: 50%;
   width: 87%;

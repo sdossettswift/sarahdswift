@@ -3,7 +3,9 @@
   <head>
     <title>S A R A H  S W I F T </title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Montez|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway"
+     rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +13,17 @@
   </head>
 
   <body>
+    <div class="header">
+      <h1>SARAH SWIFT</h1>
+      <div class="nav">
+        <ul>
+          <li><%= link_to 'ABOUT', href="/"%></li>
+          <li><%= link_to 'SKILLS', href="/skills"%></li>
+          <li><%= link_to 'EDUCATION', href="/schooling"%></li>
+          <li><%= link_to 'PORTFOLIO', href="/portfolio"%></li>
+          <li><%= link_to 'CONTACT', href="/contact"%></li>
+        </ul>
+      </div>
     <%= yield %>
   </body>
 </html>
