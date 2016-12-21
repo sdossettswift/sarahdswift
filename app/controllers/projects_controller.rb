@@ -1,10 +1,18 @@
 class ProjectsController < ApplicationController
 
+
   def new
+      if @current_user.nil?
+        redirect_to sign_in_path, alert: "Please Sign In"
+      end
     @project = Project.new
   end
 
   def create
+
+      if @current_user.nil?
+        redirect_to sign_in_path, alert: "Please Sign In"
+      end
     @project = Project.create(project_params)
     if @project.save
       redirect_to root_path, notice: "Project added! Huzzah"
@@ -22,7 +30,19 @@ class ProjectsController < ApplicationController
     @projects =Project.all
   end
 
+
+def edit
+  if @current_user.nil?
+    redirect_to sign_in_path, alert: "Please Sign In"
+  end
+  @project =Project.find_by id: params[:id]
+end
+
   def update
+      if @current_user.nil?
+        redirect_to sign_in_path, alert: "Please Sign In"
+      end
+
     @project =Project.find_by id: params[:id]
     if @project.save
       redirect_to root_path, notice: "Project updated!"
