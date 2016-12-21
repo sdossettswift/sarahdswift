@@ -1,0 +1,20 @@
+<% if @project.errors.any? %>
+  <% @project.errors.full_messages.each do |error| %>
+  <p class="alert alert-danger">
+      <strong><%= error %></strong>
+  </p>
+  <% end %>
+<% end %>
+
+<%=simple_form_for @project do |f|%>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :front_end %>
+  <%= f.input :back_end %>
+  <%= f.input :link %>
+  <%= f.input :photo_url %>
+  <div class="form-group">
+      <%= f.submit class: "btn btn-primary" %>
+  </div>
+
+<% end %>

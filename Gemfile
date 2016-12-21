@@ -20,6 +20,7 @@ gem 'font-awesome-sass'
 gem 'pg_search'
 gem 'materialize-sass'
 gem 'rails_12factor'
+gem 'newrelic_rpm'
 
 group :test do
   gem 'minitest-rails-capybara'

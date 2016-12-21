@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sarah Swift - Projects</title>
+
+  </head>
+  <body>
+
+      <div class="about">
+        <div class="grid content-grid">
+          <div class="grid left-column">
+            <div class="project-image">
+                <%= image_tag @project.photo_url %>
+            </div>
+
+
+
+          </div>
+          <div class="grid right-column">
+            <h2><%=@project.title %></h2><br>
+
+              <h3> Front End Tech:</h3>
+              <p><%= @project.front_end%></p>
+                <br>
+
+              <h3> Back End Tech:</h3>
+              <p><%= @project.back_end %></p>
+
+
+              <p><%= @project.description %></p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </body>
+</html>

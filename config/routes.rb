@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :projects
   get 'skills' => 'portfolio#skills', as: :skills
   get 'schooling' => 'portfolio#schooling', as: :schooling
   get 'portfolio' =>'portfolio#portfolio', as: :portfolio
